@@ -1,30 +1,27 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
-    <!-- <top-nav>
-    </top-nav>
-    <login></login> -->
-    <test></test>
-  </div>
+	<div id="app"><router-view></router-view></div>
 </template>
 
 <script>
-// import TopNav from 'components/nav/TopNav'
-import Test from 'components/nav/Test'
-// import Login from 'views/Login'
-
 export default {
-  name: 'App',
-  components: {
-    // TopNav,
-    // Login,
-    Test
-  }
+  name: 'App'
 }
 </script>
 
 <style>
-  body{
-    background-color: #f4f8f9
-  }
+#app {
+	font-family: 'Microsoft YaHei','微软雅黑',Arial,sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 16px;
+	/*margin-top: 60px;*/
+}
+
 </style>

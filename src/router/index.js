@@ -1,21 +1,22 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Router from 'vue-router'
+import Home from '../pages/home'
+import Login from '../pages/login'
+import Sign from '../pages/sign'
+Vue.use(Router)
 
-// const Home = ()=>import('../views/home/Home')
-
-Vue.use(VueRouter)
-
-const routes = {
-  routes: [
-    // {
-    //   path: '/profile',
-    //   name: 'Profile',
-    //   component: Profile
-    // }
-  ],
-  mode: "history"
-}
-
-const router = new VueRouter(routes)
-
-export default router
+export default new Router({
+  routes: [{
+      path: '/',
+      name: 'home',
+      component: Home,
+  },{
+      path: '/login',
+      name: 'login',
+      component: Login,
+  },{
+    path: '/sign',
+    name: 'sign',
+    component: Sign,
+  }]
+})
