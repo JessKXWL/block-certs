@@ -3,10 +3,10 @@ module.exports = {
     resolve:{
       alias:{
         'assets': '@/assets', 
-        'common': '@/common',
+        'store': '@/store',
         'components': '@/components',
         'network': '@/network',
-        'views': '@/views'
+        'pages': '@/pages'
       }
     }
   },
